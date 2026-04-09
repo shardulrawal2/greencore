@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import carbonclock, hardware, thermaltrace
+from api.routes import router as api_router
 import uvicorn
 
 app = FastAPI(title="DatacenterOS API")
@@ -13,9 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(carbonclock.router)
-app.include_router(hardware.router)
-app.include_router(thermaltrace.router)
+app.include_router(api_router)
 
 @app.get("/")
 def read_root():
