@@ -42,6 +42,7 @@ export default function IdleHunter() {
         <ModuleHeader 
           title="IdleHunter" 
           subtitle="Autonomous load-migration heuristic — utilization threshold: 15%" 
+          moduleName="IDLEhunter"
         />
         <div className="flex flex-col items-end space-y-2">
           <div className="flex items-center space-x-3 bg-card border border-white/5 px-4 py-2 rounded-xl">

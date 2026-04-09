@@ -23,6 +23,7 @@ export default function WaterWatch() {
         <ModuleHeader 
           title="WaterWatch" 
           subtitle="Statistical processing — Z-Score Anomaly Detection (σ > 2.5)" 
+          moduleName="WaterWatch"
         />
         <button 
           onClick={() => setReportOpen(!reportOpen)}

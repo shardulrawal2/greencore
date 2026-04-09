@@ -53,7 +53,8 @@ export default function ThermalTrace() {
       <div className="flex justify-between items-start mb-10">
         <ModuleHeader 
           title="ThermalTrace" 
-          subtitle="Real-time thermal topology — marginal heat-mitigation vector" 
+          subtitle="Real-time thermal topology — marginal heat-mitigation vector"
+          moduleName="ThermalTrace"
         />
         <div className="flex items-center space-x-6">
           <div className="text-right hidden sm:block">
